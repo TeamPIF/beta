@@ -1,0 +1,231 @@
+/*!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat Light', sans-serif;
+    color: rgb(65,64,66);
+}
+
+.topnav {
+    font-size: 19px;
+    background-color: white;
+    font-style: normal;
+    font-family: 'Montserrat Light', sans-serif;
+    height: 105px;
+}
+
+.navbar-right {
+    padding-top:20px;
+}
+
+.donate {
+    border-style: solid;
+    border-color: #4596de;
+}
+.lead {
+    font-size: 19px;
+    font-family: 'Montserrat Light', sans-serif;
+}
+
+.intro-header {
+    padding-top: 200px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background:
+        /* top, transparent red */
+            linear-gradient(
+                    rgba(56, 55, 55, 0.45),
+                    rgba(79, 77, 77, 0.45)
+            ),
+                /* bottom, image */
+            url(../../assets/hand_shake.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-partners {
+    padding-top: 200px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background:
+        /* top, transparent red */
+            linear-gradient(
+                    rgba(56, 55, 55, 0.45),
+                    rgba(79, 77, 77, 0.45)
+            ),
+                /* bottom, image */
+            url(../../assets/commons.png) no-repeat center center;
+    background-size: cover;
+}
+
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
+
+
+.intro-message > h1 {
+    margin: 0;
+    font-size: 50px;
+    color:white;
+    letter-spacing: 3px;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    color: white;
+}
+
+.intro-message > h3 {
+    color:white;
+    font-size: 15pt;
+    letter-spacing: 2px;
+}
+
+.custom-counter {
+    margin-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+}
+
+.custom-counter li::before {
+    content: counter(step-counter);
+    margin-right: 5px;
+    font-size: 80%;
+    color: #63a7c7;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 30px;
+}
+.custom-counter li {
+    counter-increment: step-counter;
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    font-family: 'Montserrat Light', sans-serif;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    font-family: 'Montserrat Light', sans-serif;
+}
+
+.section-heading {
+    text-decoration: underline;
+    text-decoration-color: #89b0e7;
+    position: relative;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+#donate_button a{
+    font-size: 20px;
+    border-style: solid;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+#register_button a{
+    font-size: 20px;
+    border-style:solid;
+    border-width: 5px;
+    padding: 20px;
+    text-decoration: none;
+
+}
+
+#progress h1{
+    font-size: 70px;
+    color: rgb(63, 132, 197);
+    font-style: bold;
+}
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../../assets/banner-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+
+@media(max-width:1199px) {
+
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+}
+
+footer {
+    padding: 50px 0;
+    background-color: white;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}

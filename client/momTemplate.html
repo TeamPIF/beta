@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Mom Website Test </title>
+        <link rel="icon" href="assets/favicon.png" type="image/png">
+        <link rel="stylesheet" type='text/css' href="css/bootstrap.min.css">
+        <link rel="stylesheet" type='text/css' href="css/app.css">
+        <!-- <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans'> -->
+        <!--
+        nnnn     nn rrrrrrrr
+        nn nn    nn rr     r
+        nn  nn   nn rrrrrrrr
+        nn   nn  nn rr rr
+        nn    nn nn rr   rr
+        nNoah  nnnn rRubin rr
+        -->
+    </head>
+    <body>
+        <div class="appContainer" ng-app="app">
+            <div class="container">
+                <!-- Boostrap CSS container -->
+                <div class="logoContainer">
+                    <a href="#/">
+                        <img src="assets/logo.jpeg" class="img-responsive center-block"/>
+                    </a>
+                </div>
+                <header>
+                    <!-- Header/Navbar -->
+                    <nav class="navbar navbar-default">
+                        <ul class="nav navbar-nav nav-justified">
+                            <li><a href="#/"> Home </a></li>
+                            <li><a href="#about"> About Me </a></li>
+                            <li><a href="#process"> Process </a></li>
+                            <li><a href="#testimonials"> Testimonials </a></li>
+                            <li><a href="#contact"> Contact Me</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+            <div class="main">
+                <!-- App goes here -->
+                <div ng-view></div>
+            </div>
+            <div class="footer container">
+                <footer>
+                    <div class="row">
+                        <div class="placeholder col-xs-3"></div>
+                        <div class="socialMedia col-xs-2">
+                            <div class="row">
+                                <div class="logoContainer col-xs-1">
+                                    <a href="https://www.facebook.com/lisarubinwardrobeconsulting" target="_blank">
+                                        <img class="logo" src="assets/facebook_resized.jpg"/>
+                                    </a>
+                                </div>
+                                <div class="logoContainer col-xs-1">
+                                    <a href="https://twitter.com/shopping4u" target="_blank">
+                                        <img class="logo" src="assets/twitter_resized.png"/>
+                                    </a>
+                                </div>
+                                <div class="logoContainer col-xs-1">
+                                    <a href="https://instagram.com/lisashopping4u/" target="_blank">
+                                        <img class="logo" src="assets/instagram_resized.png"/>
+                                    </a>
+                                </div>
+                                <div class="logoContainer col-xs-1">
+                                    <a href="https://www.linkedin.com/profile/view?id=67420622" target="_blank">
+                                        <img class="logo" src="assets/linkedin_resized.png"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                            <!-- <p class="text-justified">
+                                Follow and Connect on <b>Facebook</b>, <b>Twitter</b>, <b>Instagram</b>, and <b>LinkedIn</b>
+                            </p> -->
+                    </div>
+                        <div class="placeholder col-xs-2"></div>
+                        <div class="contact col-xs-3">
+                            <a href="#contact"> Contact Me</a> <br>
+                            <a href="tel:612-747-6695"> <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> 612 747 6695 </a> <br>
+                            <a href="mailto:lisa@wardrobeconsulting.net"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> lisa@wardrobeconsulting.net</a>
+                        </div>
+                        <div class="placeholder col-xs-2"></div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>

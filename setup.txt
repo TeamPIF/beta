@@ -1,0 +1,59 @@
+|*********** Environment Set Up Instructions ***********|
+
+MySQL Installation:
+1)  If you have never used a MySQL server locally on your computer before,
+    to check whether or not you have it installed, type:
+    a)  which mysql.server --> if you see something like "/usr/local/bin/mysql.server",
+        that means you have the mysql.server command in your path
+        i)  to start the server --> mysql.server start
+        ii) to stop the server --> mysql.server stop
+    b)  which mysqld --> if you see a path show up, that means you have
+        the mysqld command in your path
+        i)  to start the server --> mysqld (or mysqld_safe)
+        ii) to stop the server --> mysql.server stop (or lsof -i | grep mysql, then kill process)
+
+2) To change the password for the 'root' user:
+    a)  USE mysql;
+    b)  UPDATE user SET password=PASSWORD('your_new_password') WHERE User='root'; (5.6)
+    c)  ALTER USER user IDENTIFIED BY 'your_new_password'; (5.7)
+    d)  FLUSH PRIVILEGES;
+    e)  quit;
+
+Getting the Code:
+    a)  Navigate to the directory of your choice
+    b)  Run the following commands:
+        i)   git clone git@github.com:TeamPIF/beta.git
+        ii)  git branch                         --> * master
+        iii) git branch -a                      --> * master, origin/dev
+        iv)  git checkout -b dev origin/dev     --> Switched to a new branch 'dev'
+        v)   git checkout master
+        vi)  cd beta/server, follow the next section
+
+MySQL Database Initialization:
+3)  To run the InitMVP.sql script, run the following command:
+    a)  'mysql -u root -p << /path/to/InitMVP.sql'
+        i)   If you get the message 'bash: mysql: command not found', that means
+             you don't have the mysql toolkit installed.  If you have homebrew,
+             run the commands:
+        ii)  brew udpate
+        iii) brew doctor
+        iv)  brew upgrade
+        v)   brew install mysql
+    b)  if the command is successful, it will prompt you for the password, then
+        you should be in!
+
+Starting (and Testing) Backend:
+4) To run the backend, navigate to beta/server, and run the commands:
+    a)  npm install *****(do the same in beta/client)*****
+    b)  ./startDev to start the development server, contained in devServer.js,
+    which is meant for testing and screwing around with endpoints
+    c)  ./starProd to start the production server, contained in server.js,
+    which is meant for production code only
+        i) If you don't have node or npm, see https://docs.npmjs.com/getting-started/installing-node
+    d)  Note, the dev server is on port 8070, and production is on 8080
+
+Starting Frontend:
+5)  To start the frontend, navigate to beta/client, and run the command:
+    a)  ./serve --> this will start a python server on port 8000, and is more of
+        a convenience than a necessity.  If you have python 3.x, change the code
+        in serve to: 'python -m http.server -8000'

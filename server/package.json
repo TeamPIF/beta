@@ -1,0 +1,13 @@
+{
+    "name" : "PIF_Back",
+    "version" : "0.0.1",
+    "description" : "Pay It Forward Platform, Back End",
+    "main" : "js/server.js",
+    "author" : "Noah Rubin",
+    "dependencies" : {
+        "express" : "~4.13.3",
+        "mysql" : "~2.9.0",
+        "body-parser" : "~1.14.1",
+        "express-cors" : "~0.0.3"
+    }
+}

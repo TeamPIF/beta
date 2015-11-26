@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href="http://allfont.net/allfont.css?fonts=montserrat-light" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PayItForward</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <!-- <link href="css/landing-page.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="app.css">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="http://d3js.org/d3.v3.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <!-- Donation Statistics Loading Script -->
+    <script src="js/donate.js"></script>
+    <script src="js/app.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="index.html">
+                    <img src = "img/logo.jpg" width = 230px, height="90px">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="partners.html">partners</a>
+                    </li>
+                    <li>
+                        <a href="stories.html">stories</a>
+                    </li>
+                    <li class = "donate">
+                        <a href="donate.html">donate</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Food For Change</h1>
+                        <h3>uniting the community one meal at a time </h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="#stats" class="btn btn-default btn-lg"><i class="fa fa-bar-chart"></i> <span class="network-name">Statistics</span></a>
+                            </li>
+                            <li>
+                                <a href="#stories" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                    Stories</a>
+                            </li>
+                            <li>
+                                <a href="#join" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>Join Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-sm-7 col-lg-offset-2">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">ABOUT</h2>
+                    <p class="lead">Welcome to Food for Change! This organization is
+                        dedicated to feeding the hungry and changing the
+                        perception towards those in need. Local Businesses have
+                        teamed up with Food for Change so that anyone in need
+                        can step in and grab a meal. We can’t do this without you!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-1 col-sm-push-5 col-sm-7">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading" style = "margin-left:35px;">HOW IT WORKS</h2>
+                    <p class="lead">
+                        <ol class = "custom-counter" style = "font-size: 19px">
+                            <li>Local Businesses register with Food for Change. </li><br>
+                            <li>Community members can donate a meal using a Food for Change tablet at checkout or can donate remotely on this site.
+                            </li><br>
+                            <li>Those in need no longer need to panhandle and can walk in to affiliated locations and
+                                receive a meal. </li><br>
+                        </ol>
+                    </p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-7 col-sm-5">
+                    <img class="img-responsive" src="img/pay_it_forward.jpg" alt="" size ="900px" width = "500px">
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+    <a name = "stats"></a>
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row" id = "progress">
+                <div class="col-lg-12 col-sm-12" style="text-align:center;">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">OUR PROGRESS</h2>
+                    <!--<p class="lead">
+
+                    </p> -->
+                    <div class = "col-lg-2 col-sm-2">
+                        <h1 id="mealsDonated"></h1>
+                        <h3>MEALS DONATED</h3>
+                    </div>
+                    <div class = "col-lg-2 col-sm-2 col-lg-offset-1">
+                        <h1 id="mealsServed"></h1>
+                        <h3>MEALS SERVED</h3>
+                    </div>
+                    <div class = "col-lg-2 col-sm-2 col-lg-offset-1">
+                        <h1 id="localPartners">10</h1>
+                        <h3>LOCAL PARTNERS</h3>
+                    </div>
+                    <div class = "col-lg-2 col-sm-2 col-lg-offset-1">
+                        <h1 id="available"></h1>
+                        <h3>TOTAL AVAILABLE DONATIONS</h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class = "row" id = "graph" style="text-align:center;">
+                <!-- GRAPH -->
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <a name = "stories"></a>
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">STORIES</h2>
+                    <p class="lead">
+                        <i class="fa fa-quote-left"></i>
+
+                        I used to spend hours sitting outside shops feeling ashamed for having to beg
+                        for money to eat. Now I can walk into a shop and get a meal while I spend my time
+                        finding ways to provide for myself. I’m so grateful for this organization and one
+                        day I want to be the one donating. We’re all human and we should care for one another.
+
+                        <i class="fa fa-quote-right"></i><br>
+
+                        <b> - Bill </b>
+
+                    </p>
+                    <hr>
+                    <p class = "lead">
+                        Many people in Ithaca feel similarly to Bill. Begging for basic human rights can make a
+                        person in need feel shameful and isolated. In reality, those that need help are
+                        contributing members of society and being kind to those in need will both motivate
+                        them to seek sustainable livelihoods and others to engage in acts of kindness.
+                    </p><br>
+                    <div class = "row" id = "donate_button">
+                        <div style = "margin-left: 15px">
+                            <a href="stories.html">MORE STORIES</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/happy-homeless.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <a name = "join"></a>
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-8 col-sm-8">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">JOIN US</h2>
+                    <p class="lead">
+                        Food for Change depends on local business partnerships. If you have
+                        been inspired to help members of the community pay it forward with a meal to
+                        someone in need, join our family! We’d love to have you!
+                    </p>
+
+                </div>
+                <div class = "col-lg-4 col-sm-4" id = "donate_button">
+                    <div style = "margin-left: 30px; padding-top:120px">
+                        <a href="register.html">REGISTER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2></h2>
+                </div>
+                <div class="col-lg-6">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="index.html">home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="partners.html">partners</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="stories.html">stories</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="donate.html">donate</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="login.html">for businesses</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; Family & Children's Service of Ithaca 2015. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

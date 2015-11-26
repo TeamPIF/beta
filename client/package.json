@@ -1,0 +1,13 @@
+{
+    "name" : "PIF_Front",
+    "version" : "0.0.1",
+    "description" : "Pay It Forward Platform, Front End",
+    "main" : "index.html",
+    "author" : "Noah Rubin",
+    "dependencies" : {
+        "angular" : "~1.4.8",
+        "angular-route" : "~1.4.8",
+        "bootstrap" : "~3.3.5",
+        "d3" : "~3.5.9"
+    }
+}

@@ -1,0 +1,40 @@
+<div class="contactContainer">
+    <h3 class="text-center"><strong>Contact Me</strong></h3>
+    <div class="row">
+        <div class="placeholder col-xs-2"></div>
+        <form novalidate class="contactForm col-xs-8" name="thisForm">
+            <p class="formDatum"> First Name: <br>
+                <input type="text" ng-model="firstName" required>
+                <span class="has-error" ng-show="thisForm.firstName.$dirty && thisForm.firstName.$invalid">
+                    <span ng-show="thisForm.firstName.$error.required"> First name is required. </span>
+                </span>
+            </p>
+            <p class="formDatum"> Last Name: <br>
+                <input type="text" ng-model="lastName" required>
+                <span class="has-error" ng-show="thisForm.lastName.$dirty && thisForm.lastName.$invalid">
+                    <span ng-show="thisForm.lastName.$error.required"> Last name is required. </span>
+                </span>
+            </p>
+            <p class="formDatum"> Email Address: <br>
+                <input type="email" ng-model="email" required>
+                <span class="has-error" ng-show="thisForm.email.$dirty && thisForm.email.$invalid">
+                    <span ng-show="thisForm.email.$error.required"> First name is required. </span>
+                    <span ng-show="thisForm.email.$error.email"> Invalid email address. </span>
+                </span>
+            </p>
+            <p class="formDatum"> Subject: <br>
+                <input type="text" ng-model="subject" required>
+                <span class="has-error" ng-show="thisForm.subject.$dirty && thisForm.subject.$invalid">
+                    <span ng-show="thisForm.subject.$error.required"> Subject is required </span>
+                </span>
+            </p>
+            <p class="formDatum"> Message: <br>
+                <textarea name="message" rows="8" cols="80"></textarea>
+                <span >
+
+                </span>
+            </p>
+        </form>
+        <div class="placeholder col-xs-2"></div>
+    </div>
+</div>
